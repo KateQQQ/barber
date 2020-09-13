@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "gulp": "gulp"
   },
   "resolutions": {
     "graceful-fs": "^4.2.4"
@@ -12,6 +13,7 @@
   "author": "Katusha",
   "license": "ISC",
   "dependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
     "browser-sync": "^2.2.3",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
