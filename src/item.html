@@ -2,49 +2,62 @@
 
 //= ./template/header.html
 
-<main>
-  <div>
-    <h2>Набор для путешествий «Baxter of California»</h2>
-    <p>Главная</p>
-    <p>Магазин</p>
-    <p>Средства для ухода</p>
-    <p>Набор для путешествий «Baxter of California»</p>
+<main class="item-main">
+  <div class="item-main__inner">
+  <h2>Набор для путешествий «Baxter of California»</h2>
+  <div class="item-breadscrumbs breadscrumbs">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li>Магазин</li>
+      <li>Средства для ухода</li>
+      <li>Набор для путешествий «Baxter of California»</li>
+    </ul>
   </div>
 
-  <section>
-    <img src="img/Layer_47_copy.svg" />
-    <div>
-      <img src="img/Layer_45.svg" />
-      <img src="img/Layer_46.svg" />
-      <img src="img/Layer_47.svg" />
+  <section class="item-product-groop">
+    <div class="item-image">
+      <div class="item-image__main-foto">
+        <img src="img/item-page/main-foto.png" />
+        <div class="item-image__foto-groop">
+          <img src="img/item-page/first-foto.png" />
+          <img src="img/item-page/second-foto.png" />
+          <img src="img/item-page/third-foto.png" />
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <p>есть в наличии</p>
-    <p>Артикул: dexter-ae</p>
-    <p>
-      Travel Kit – необходимый аксессуар во время любого<br />путешествия. В
-      аккуратной кожаной сумке находится все, что<br />нужно для бритья и
-      ухода за кожей во время рабочей поездки<br />или отдыха: средство для
-      умывания, увлажняющий крем, крем<br />для бритья, крем после бритья,
-      шампунь. Набор также может<br />стать отличным подарком.
-    </p>
-    <div>
-      <p>2900 &#8381;</p>
-      <button type="button">Купить</button>
-    </div>
+    <section class="item-description-groop">
+      <div class="item-description">
+        <div class="item-description__availability">
+          <p>есть в наличии</p>
+          <p><span>Артикул: dexter-ae</span></p>
+        </div>
+        <p>
+          Travel Kit – необходимый аксессуар во время любого<br />путешествия. В
+          аккуратной кожаной сумке находится все, что<br />нужно для бритья и
+          ухода за кожей во время рабочей поездки<br />или отдыха: средство для
+          умывания, увлажняющий крем, крем<br />для бритья, крем после бритья,
+          шампунь. Набор также может<br />стать отличным подарком.
+        </p>
+        <div class="item-description__button buy-button">
+          <p>2900 &#8381;</p>
+          <button class="button" type="button">Купить</button>
+        </div>
+      </div>
+      <div class="item-details">
+        <h3>В набор входят:</h3>
+        <ul>
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+      </div>
+    </section>
+
   </section>
-  <section>
-    <h3>В набор входят:</h3>
-    <ul>
-      <li>Средство для умывания (50 мл)</li>
-      <li>Увлажняющий крем (50 мл)</li>
-      <li>Крем для бритья (50 мл)</li>
-      <li>Крем после бритья, шампунь (50 мл)</li>
-      <li>Удобная кожаная косметичка</li>
-    </ul>
-  </section>
+</div>
 </main>
 
 //= ./template/footer.html
