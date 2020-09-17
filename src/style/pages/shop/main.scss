@@ -1,0 +1,120 @@
+.shop-main {
+  background-image: url(/img/bgc-layer-price.png);
+  background-color: #fff;
+  &-inner {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    min-height: 100%;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 42px;
+    }
+  }
+}
+.shop-breadscrumbs {
+  margin-bottom: 60px;
+}
+.shop-filter {
+  display: flex;
+  &-choose {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+    ul {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+      list-style: none;
+    }
+    &__brands {
+      margin-bottom: 50px;
+    }
+    &__products {
+      margin-bottom: 50px;
+    }
+  }
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    li {
+      list-style: none;
+    }
+    &__item {
+      background-color: #fff;
+      //border: solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px #ccc;
+      p {
+        margin-left: 15px;
+      }
+    }
+    &__product-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    &__pages {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 50px;
+      button {
+        display: block;
+        min-width: 43px;
+        min-height: 43px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.buy-button p {
+  margin-left: 0;
+}
+
+
+
+.shop-filter-cards__pages .button:hover {
+  background-color: #663d15;
+  color: #fff;
+}
+.shop-filter-cards__pages .button:focus {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #fff;
+  border-color: #fff;
+} 

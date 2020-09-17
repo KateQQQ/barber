@@ -1,0 +1,36 @@
+.visually-hidden {
+    visibility: hidden;
+}
+.container {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.container:hover,
+.container:focus {
+    color: #663d15;
+}
+.container input[type="radio"] + .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.container input[type="radio"]:focus + .checkmark {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto #3480eb;
+}
+.container input[type="radio"]:checked + .checkmark::before {
+    position: absolute;
+    content: "";
+    top: 2.5px;
+    left: 2.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+}

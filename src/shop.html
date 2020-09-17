@@ -1,155 +1,192 @@
 //= ./partials/head.html
 //= ./template/header.html
 
-<main>
-    <div>
+<main class="shop-main">
+    <div class="shop-main-inner">
+    
         <h2>Средства для ухода</h2>
-        <p>Главная</p>
-        <p>Магазин</p>
-        <p>Средства для ухода</p>
-    </div>
+    <div class="shop-breadscrumbs breadscrumbs">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li>Магазин</li>
+          <li>Средства для ухода</li>
+        </ul>
+      </div>
 
-    <section>
+<div class="shop-filter">
+
+<div class="shop-filter-choose">
+
+    <section class="shop-filter-choose__brands">
         <h3>Производители:</h3>
         <ul>
             <li>
-                <label class="container">Baxter of California
-                    <input type="checkbox" checked="checked">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox" checked="checked">
                     <span class="checkmark"></span>
+                    Baxter of California
                 </label>
             </li>
             <li>
-                <label class="container">Mr Natty
-                    <input type="checkbox">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="checkmark"></span>
+                    Mr Natty
                 </label>
             </li>
             <li>
-                <label class="container">Suavecito
-                    <input type="checkbox">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="checkmark"></span>
+                    Suavecito
                 </label>
             </li>
             <li>
-                <label class="container">Malin+Goetz
-                    <input type="checkbox">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="checkmark"></span>
+                    Malin+Goetz
                 </label>
             </li>
             <li>
-                <label class="container">Murray’s
-                    <input type="checkbox">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="checkmark"></span>
+                    Murray’s
                 </label>
             </li>
             <li>
-                <label class="container">American Crew
-                    <input type="checkbox">
+                <label class="container">
+                    <input class="visually-hidden" type="checkbox">
                     <span class="checkmark"></span>
+                    American Crew
                 </label>
             </li>
 
         </ul>
     </section>
 
-    <section>
+    <section class="shop-filter-choose__products">
         <h3>Группы товаров:</h3>
         <ul>
             <li>
-                <label class="container">Бритвенные
+                <label class="container">
+                    <input class="visually-hidden" type="radio" name="groop" checked="checked">
+                    <span class="checkmark"></span>
+                    Бритвенные
                     принадлежности
-                    <input type="checkbox" name="groop" checked="checked">
-                    <span class="checkmark"></span>
                 </label>
             </li>
             <li>
-                <label class="container">Средства для ухода
-                    <input type="checkbox" name="groop">
+                <label class="container">
+                    <input class="visually-hidden" type="radio" name="groop">
                     <span class="checkmark"></span>
+                    Средства для ухода
                 </label>
             </li>
             <li>
-                <label class="container">Аксессуары
-                    <input type="checkbox" name="groop">
+                <label class="container">
+                    <input class="visually-hidden" type="radio" name="groop">
                     <span class="checkmark"></span>
+                    Аксессуары
                 </label>
             </li>
         </ul>
-        <button type="button">Показать</button>
+       
     </section>
-
+    <div>
+        <button class="button" type="button">Показать</button>
+    </div>
+</div>
+<div class="shop-filter-cards">
     <section>
-        <ul>
+        <ul class="shop-filter-cards__product-cards">
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Набор для путешествий<br>«Baxter of California»</p>
                         <img src="img/Layer_38.svg">
+                        <p>Набор для путешествий<br>«Baxter of California»</p>
                     </a>
+                    <div class="buy-button">
                     <p>2900 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                </div>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Увлажняющий кондиционер <br>«Baxter of California»</p>
                         <img src="img/Layer_30.svg">
+                        <p>Увлажняющий кондиционер <br>«Baxter of California»</p>
                     </a>
+                    <div class="buy-button">
                     <p>750 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                </div>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Гель для волос<br>«SUAVECITO»</p>
                         <img src="img/Layer_39.svg">
+                        <p>Гель для волос<br>«SUAVECITO»</p>
                     </a>
+                    <div class="buy-button">
                     <p>290 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                </div>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Глина для укладки волос<br>«American crew»</p>
                         <img src="img/Layer_32.svg">
+                        <p>Глина для укладки волос<br>«American crew»</p>
                     </a>
+                    <div class="buy-button">
                     <p>500 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                </div>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Гель для волос<br>«American crew»</p>
                         <img src="img/Layer_33.svg">
+                        <p>Гель для волос<br>«American crew»</p>
                     </a>
+                    <div class="buy-button">
                     <p>300 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                    </div>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="shop-filter-cards__item">
                     <a href="#">
-                        <p>Набор для бритья<br>«Baxter of California»</p>
                         <img src="img/Layer_42.svg">
+                        <p>Набор для бритья<br>«Baxter of California»</p>
                     </a>
+                    
+                    <div class="buy-button">
                     <p>3900 &#8381;</p>
-                    <button type="button">Купить</button>
+                    <button class="button" type="button">Купить</button>
+                    </div>
                 </div>
             </li>
-        </ul>
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
         </ul>
     </section>
-
-
+    <div>
+        <ul class="shop-filter-cards__pages">
+            <li><button class="button" type="button">1</button></li>
+            <li><button class="button" type="button">2</button></li>
+            <li><button class="button" type="button">3</button></li>
+            <li><button class="button" type="button">4</button></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
 </main>
 
 //= ./template/footer.html

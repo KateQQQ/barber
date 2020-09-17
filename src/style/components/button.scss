@@ -17,7 +17,11 @@
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.3px;
-
+  &:hover,
+  &:focus {
+    background-color: #663d15;
+    outline: none;
+  }
   &[aria-disabled="true"],
   &:disabled {
     background: grey;
@@ -26,9 +30,13 @@
     &:focus {
       outline: none;
     }
+    
+    
   }
 
   &.fluid {
     width: 100%;
   }
+  
 }
+

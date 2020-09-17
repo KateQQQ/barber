@@ -9,4 +9,10 @@
   &::placeholder {
     font-family: "PT Sans Narrow", sans-serif;
   }
+  &:hover {
+    border: 2px solid #663d15;
+  }
+  &:focus {
+    border: 2px solid #663d15;
+  }
 }

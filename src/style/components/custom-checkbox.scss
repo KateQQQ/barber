@@ -1,0 +1,42 @@
+.visually-hidden {
+    visibility: hidden;
+}
+.container {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.container:hover,
+.container:focus {
+    color: #663d15;
+}
+.container input[type="checkbox"] + .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000;
+}
+.container input[type="checkbox"]:focus + .checkmark {
+   border-color: #663d15;
+   outline: thin dotted;
+   outline: 5px auto #3480eb;
+}
+.container input[type="checkbox"]:checked + .checkmark::before,
+.container input[type="checkbox"]:checked + .checkmark::after {
+   position: absolute;
+   content: "";
+   top: 5px;
+   left: -1px;
+   width: 15px;
+   height: 2px;
+   background-color: #000;
+}
+
+.container input[type="checkbox"]:checked + .checkmark::before {
+   transform: rotate(45deg);
+}
+.container input[type="checkbox"]:checked + .checkmark::after {
+   transform: rotate(-45deg);
+}
