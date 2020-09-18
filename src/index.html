@@ -8,7 +8,7 @@
       <div class="index-header__logo">
         <img src="/img/index-logo.svg" alt="Логотип" />
       </div>
-      <ul class="advantages-list">
+      <ul id="info" class="advantages-list">
         <li class="advantages-list__item">
           <h3>Быстро</h3>
           <p>
@@ -34,7 +34,7 @@
     </header>
 
 
-    <section class="index-section">
+    <section id="news" class="index-section">
       <div class="index-section__column index-section__column--news">
         <h2 class="index-section__title">
           Новости
@@ -93,7 +93,7 @@
 
 
 
-    <section class="index-section">
+    <section id="contact" class="index-section">
       <div class="index-section__column">
         <h2 class="index-section__title">
           Контактная информация
@@ -114,7 +114,7 @@
           </li>
           </ul>
           <div class="index-contact-block-buttons">
-            <a class="button index-contact-block__button" href="#">Как проехать</a>
+            <button onclick="mapModalOpen()" class="button index-contact-block__button">Как проехать</button>
             <a class="button index-contact-block__button index-contact-block__button_right" href="#">Обратная связь</a>
           </div>
         </div>
@@ -162,6 +162,6 @@
 //= ./template/footer.html
 </main>
 
-
-
+//= ./modals/login.html
+//= ./modals/map.html
 //= ./partials/footer.html

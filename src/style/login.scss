@@ -1,0 +1,97 @@
+.modal {
+  h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  &-form {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      input {
+        position: absolute;
+      }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    input {
+        padding-right: 40px;
+      width: 100%;
+      &::placeholder {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    button {
+      width: 100%;
+    }
+  
+}
+  &-close {
+      width: 22px;
+      height: 22px;
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      right: -35px;
+      &::before,
+      &::after {
+          content: "";
+          position: absolute;
+          background-color: #d0d0d0;
+          width: 19px;
+          height: 3px;
+          top: 10px;
+          left: 2px;
+      }
+      &::before {
+          transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+    }
+  }
+  &-window {
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+      z-index: 5;
+    width: 460px;
+    padding: 50px 80px;
+    background-color: #fff;
+    background-image: url(/img/section-blur.png);
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #000;
+    text-transform: uppercase;
+top: 120px;
+left: 50%;
+margin-left: -230px;
+
+    position: fixed;
+    font-weight: 600;
+  }
+
+}
+
+.modal-login {
+  width: 300px;
+}
+.login-user {
+    background-image: url("/img/icons/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+.login-password {
+    background-image: url("/img/icons/password.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}

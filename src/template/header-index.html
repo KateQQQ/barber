@@ -1,34 +1,35 @@
-
-  <nav class="navigation">
-    <div class="navigation-inner">
-      <div class="site-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Информация</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Новости</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Прайс-лист</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Магазин</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="user-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <button class="navigation-list__link">
-              <img src="/img/icons/login.svg">
-              Вход
-            </button>
-          </li>
-        </ul>
-      </div>
+<nav class="navigation">
+  <div class="navigation-inner">
+    <div class="site-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list__item">
+          <a href="#info" class="navigation-list__link">Информация</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="#news" class="navigation-list__link">Новости</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="/price.html" class="navigation-list__link">Прайс-лист</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="/shop.html" class="navigation-list__link">Магазин</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="#contact" class="navigation-list__link">Контакты</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+    <div class="user-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list__item">
+          <button class="navigation-list__link">
+            <div onclick="loginModalOpen()" class="navigation-list__icon">
+              <img src="/img/icons/log-in-icon.svg" onload="SVGInject(this)" />
+            </div>
+            Вход
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

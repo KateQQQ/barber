@@ -1,11 +1,12 @@
 @import "../../bower_components/normalize.css/normalize.css";
 @import "./components/main.scss";
 @import "./reset.scss";
-@import "./navigation.scss";
 @import "./footer.scss";
 @import "./pages/main.scss";
 @import "./header.scss";
 
+@import "./map.scss";
+@import "./login.scss";
 body {
   font-family: "PT Sans Narrow", sans-serif;
 }

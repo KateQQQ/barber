@@ -1,0 +1,48 @@
+.modal {
+   
+    &-close {
+        width: 22px;
+        height: 22px;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: -35px;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #d0d0d0;
+            width: 19px;
+            height: 3px;
+            top: 10px;
+            left: 2px;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+      }
+    }
+&-windows {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 5;
+  background-color: #fff;
+  background-image: url(/img/section-blur.png);
+  background-position: 0 center;
+  background-repeat: repeat;
+  color: #000;
+position: fixed;
+}
+&-map {
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+    border: 7px solid #fff;
+}
+}
