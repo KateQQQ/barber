@@ -1,63 +1,70 @@
 .navigation {
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  .navigation-inner {
-    max-width: 940px;
-    min-height: 70px;
-    margin: 0 auto;
-    display: flex;
-  }
-  
-  .navigation-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    &__icon {
-      svg {
-        margin-top: 3px;
-        margin-right: 15px;
-        
-      }
-    }
-    
-    &__link {
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 10px 15px;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      vertical-align: middle;
-      height: 70px;
-      color: inherit;
-      text-decoration: none;
-      text-transform: inherit;
-      &:hover,
-      &:focus {
-        background-color: #242424;
-        svg path {
-          fill: #fff;
-        }
-      }
-      
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.navigation-inner {
+  max-width: 940px;
+  min-height: 70px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  &__icon {
+    svg {
+      margin-top: 3px;
+      margin-right: 15px;
     }
   }
-  
-  .user-navigation {
-    margin-left: auto;
-  }
-  .logo-navigation {  
+
+  &__link {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
-   padding: 10px 40px 10px 20px;
+    vertical-align: middle;
+    height: 70px;
+    color: inherit;
+    text-decoration: none;
+    text-transform: inherit;
+    position: relative;
+    &--active::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+      height: 2px;
+      background-color: #fff;
+    }
+    &:hover,
+    &:focus {
+      background-color: #242424;
+      svg path {
+        fill: #fff;
+      }
+    }
   }
+}
+
+.user-navigation {
+  margin-left: auto;
+}
+.logo-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 40px 10px 20px;
+}
