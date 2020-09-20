@@ -17,6 +17,10 @@
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.3px;
+  &--active {
+    background: #fff;
+    color: #000;
+  }
   &:hover,
   &:focus {
     background-color: #663d15;
